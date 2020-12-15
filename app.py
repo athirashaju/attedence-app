@@ -44,13 +44,13 @@ def index1():
             db.child('teachbotattendence').push(payload)
 
 
-            return render_template('c.html', submit=True, name = payload['name'])
+            return render_template('index.html', submit=True, name = payload['name'])
 
 
 
 
 
-    return render_template('c.html', submit = False)
+    return render_template('index.html', submit = False)
 
 @app.route('/team',methods=['POST','GET'])   
 def team():
